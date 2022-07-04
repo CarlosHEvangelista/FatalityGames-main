@@ -1,0 +1,7 @@
+#AboutUs {
+  background-color: var(--body-color-second);
+}
+
+#AboutUs img {
+  width: 100%;
+}

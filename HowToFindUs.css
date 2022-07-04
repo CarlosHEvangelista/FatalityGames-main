@@ -1,0 +1,26 @@
+#HowToFindUs {
+  text-align: center;
+}
+
+#HowToFindUs .contact {
+  position: relative;
+}
+
+#HowToFindUs .contact img {
+  width: 13rem;
+  height: 13rem;
+
+  margin-left: -13rem;
+}
+
+#HowToFindUs .contact i {
+  font-size: 5rem;
+  position: absolute;
+
+  top: 10rem;
+  left: 9rem;
+
+  color: white;
+  background-color: hsl(151, 100%, 45%);
+  clip-path: circle();
+}

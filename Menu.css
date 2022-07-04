@@ -1,0 +1,71 @@
+.menu {
+  background-color: var(--background-menu);
+  height: 100vh;
+  width: 55vw;
+  left: -20rem;
+  position: fixed;
+  top: 0;
+  transition: 1s;
+
+  place-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+nav label img {
+  height: 3rem;
+  width: 3rem;
+
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+nav input:checked ~ .menu {
+  left: 0;
+}
+
+nav label img[src='img/IconClose.png'] {
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: 1s;
+}
+
+nav input:checked ~ label img[src='img/IconClose.png'] {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+nav label img[src='img/IconMenu.png'] {
+  transform: rotate(-360deg);
+  opacity: 1;
+  transition: 1s;
+}
+
+nav input:checked ~ label img[src='img/IconMenu.png'] {
+  transform: rotate(360deg);
+  opacity: 0;
+}
+
+.menu a {
+  color: black;
+}
+
+.menu a.active {
+  display: block;
+  animation: chanceText 1s alternate forwards;
+}
+
+@keyframes chanceText {
+  to {
+    transform: skew(-12deg) rotate(-12deg) scale(110%);
+
+    text-shadow: 2px 2px 0 var(--base-color), -2px -2px 0 rgb(3, 141, 141);
+  }
+}

@@ -1,0 +1,141 @@
+@media (min-width: 969px) {
+ .menu {
+    left: -50rem;
+  }
+
+  input:checked ~ .menu {
+    width: 25vw;
+  }
+
+  #Home {
+    grid-auto-flow: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 85%;
+  }
+
+  #Home .image {
+    order: 1;
+
+    width: 180%;
+
+    position: relative;
+    right: 22rem;
+  }
+
+  #Home .image img {
+    width: 65%;
+
+    margin-left: 25rem;
+  }
+
+  #Home .text {
+    order: 0;
+
+    margin: 0 1.5rem;
+    max-width: 30rem;
+  }
+
+  #AboutUs {
+    grid-auto-flow: column;
+  }
+
+  #AboutUs .text {
+    max-width: 25rem;
+  }
+
+  #AboutUs .button {
+    margin-left: 5rem;
+  }
+
+  #OurServices .cards {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
+  #OurServices .text {
+    margin: auto;
+  }
+
+  #OurServices .cards .card .button {
+    margin: 1rem auto;
+  }
+
+  #WhatDoTheySayAboutUs .text {
+    margin-left:auto;
+  }
+
+  #WhatDoTheySayAboutUs .swiper {
+    margin-left: 5rem;
+  }
+
+  #WhatDoTheySayAboutUs .swiper-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  #WhatDoTheySayAboutUs .swiper-slide {
+    max-width: 85%;
+  }
+
+  #WhatDoTheySayAboutUs .button {
+    position: absolute;
+    top: 22rem;
+    left: 29rem;
+  }
+
+  #HowToFindUs {
+    position: relative;
+  }
+
+  #HowToFindUs .text {
+    position: relative;
+  }
+
+  #HowToFindUs .text ul {
+    position: absolute;
+    right: 10rem;
+    top: 15rem;
+  }
+
+  #HowToFindUs span {
+    position: absolute;
+    bottom: -30rem;
+    right: 9rem;
+  }
+
+  #HowToFindUs .maps iframe {
+    height: 30rem;
+
+    position: absolute;
+    left: 0;
+    top: 15rem;
+    width: 70%;
+  }
+
+  #HowToFindUs .contact {
+    margin-top: 30rem;
+  }
+
+  #HowToFindUs .contact i {
+    margin-left: 17rem;
+  }
+
+  #Footer {
+    align-items: center;
+  }
+
+  #Footer .text p {
+    margin-left: 2rem;
+  }
+
+  #Footer .socialNetworks ul {
+    margin-left: 2.5rem;
+  }
+
+  #Footer .backToTopButton img {
+    margin-right: 2rem;
+  }
+}

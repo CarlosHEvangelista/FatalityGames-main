@@ -1,0 +1,57 @@
+#WhatDoTheySayAboutUs {
+  background-color: var(--body-color-second);
+}
+
+#WhatDoTheySayAboutUs .swiper {
+  margin: 0 0.5rem;
+}
+
+#WhatDoTheySayAboutUs .swiper-slide {
+  box-shadow: 0px 0px 12px blueviolet;
+  padding: 2rem 2rem;
+
+  margin-top: 2rem;
+}
+
+#WhatDoTheySayAboutUs cite {
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-areas:
+    'img1 p'
+    'img1 img2';
+}
+
+#WhatDoTheySayAboutUs cite img {
+  grid-area: img1;
+}
+
+#WhatDoTheySayAboutUs cite p {
+  grid-area: p;
+}
+
+#WhatDoTheySayAboutUs .FiveStarsRating {
+  grid-area: img2;
+}
+
+#WhatDoTheySayAboutUs .swiper {
+  position: relative;
+}
+
+#WhatDoTheySayAboutUs .swiper-button-prev,
+#WhatDoTheySayAboutUs .swiper-button-next {
+  position: absolute;
+  top: 20rem;
+
+  margin: 0 0.5rem;
+}
+
+#WhatDoTheySayAboutUs .swiper-button-prev img,
+#WhatDoTheySayAboutUs .swiper-button-next img {
+  width: 5rem;
+  height: 5rem;
+}
+
+#WhatDoTheySayAboutUs .swiper-button-next::after,
+#WhatDoTheySayAboutUs .swiper-button-prev::after {
+  content: '';
+}

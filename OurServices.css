@@ -1,0 +1,46 @@
+#OurServices .cards.grid {
+  gap: 4rem;
+}
+
+#OurServices .cards {
+  text-align: center;
+}
+
+
+#OurServices .card {
+  box-shadow: 0 0 12px blueviolet;
+  border-radius: 0.25rem;
+  border-top: 10px solid var(--base-color);
+  border-bottom: 10px solid var(--base-color);
+
+  padding: 2rem;
+
+  position: relative;
+}
+
+#OurServices .card::before {
+  content: '';
+  background-color: rgba(137, 43, 226, 0.164);
+  height: 0;
+  width: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+#OurServices .card:hover::before {
+  height: 100%;
+  width: 100%;
+}
+
+#OurServices .card img {
+  transition: 0.3s;
+  width: 9rem;
+  height: 9rem;
+}
+
+#OurServices .card:hover img {
+  transform: scale(120%);
+}
